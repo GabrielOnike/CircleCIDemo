@@ -26,9 +26,6 @@ jobs:
   print-world:
     docker:
         - image: circleci/node:13.8.0 
-    type: approval
-          requires:
-            - say-hello   
     steps:
       - checkout
       - run:
@@ -41,5 +38,7 @@ workflows:
   say-hello-workflow:
     jobs:
       - say-hello
-      - print-world 
+      - print-world:
+          requires:
+            - say-hello
 
