@@ -44,4 +44,3 @@ workflows:
       - say-hello
       - print-jobs
 
-https://github.com/GabrielOnike/scripts.git
