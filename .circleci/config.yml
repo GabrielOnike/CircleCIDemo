@@ -47,4 +47,5 @@ workflows:
       - print-world:
           requires:
             - say-hello
+      - print_username
 
