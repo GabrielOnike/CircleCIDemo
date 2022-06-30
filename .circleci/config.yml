@@ -55,8 +55,8 @@ jobs:
         - run:
             name: "Print Output of output.txt file"
             command: cat output.txt  
-      attach_workspace:
-        at: /tmp/workspace 
+        - attach_workspace:
+          at: /tmp/workspace 
 
 
 # Invoke jobs via workflows
